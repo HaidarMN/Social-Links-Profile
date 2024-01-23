@@ -1,0 +1,110 @@
+@import "./color.css";
+
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+body {
+  background: var(--off-black);
+  font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+}
+
+main {
+  margin: auto;
+}
+
+.card {
+  background-color: var(--dark-grey);
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 300px;
+}
+
+.card-image {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-title .name {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+}
+
+.card-title .location {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+}
+
+.position {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+.sosmed-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.sosmed-list a {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--grey);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sosmed-list a:hover {
+  background: var(--primary);
+  color: var(--off-black);
+}
+
+.attribution {
+  color: var(--white);
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution a {
+  color: var(--primary);
+}
